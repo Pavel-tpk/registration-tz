@@ -175,7 +175,7 @@
         let user_id = $('#input-user-id').prop('value');
         let text = $('#input-text').prop('value');
 
-        $.ajax('/sendMessage', {
+        $.ajax('http://80.80.98.98:8080/sendMessage', {
             method: 'POST',
             data: {
                 _auth: initData,
