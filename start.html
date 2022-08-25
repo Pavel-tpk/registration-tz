@@ -145,7 +145,7 @@
     function checkMyData() {
         $('button').prop('disabled', true);
 
-        $.ajax('https://80.80.98.98:8080/checkUserData', {
+        $.ajax('/checkUserData', {
             method: 'POST',
             data: {
                 _auth: initData,
@@ -175,7 +175,7 @@
         let user_id = $('#input-user-id').prop('value');
         let text = $('#input-text').prop('value');
 
-        $.ajax('https://80.80.98.98:8080/sendMessage', {
+        $.ajax('/sendMessage', {
             method: 'POST',
             data: {
                 _auth: initData,
